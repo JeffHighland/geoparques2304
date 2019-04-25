@@ -1,0 +1,52 @@
+.background-image{
+    ion-card {
+    position: relative;
+    text-align: center;
+    width: auto;
+    }
+    .see {
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    right: 25%;
+    font-size: 5mm;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    background-color: #EA5153;
+    border-radius: 50px;
+    box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
+}
+.rise {
+    width: 75%;
+    height: 5%;
+    position: absolute;
+    top: 70%;
+    left: 12.5%;
+    right: 12.5%;
+    font-size: 5mm;
+    text-align: center;
+    font-family: Arial;
+    color: gray;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
+}
+.atras {
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    bottom: 5%;
+    //left: 70%;
+    right: 5%;
+    font-size: 5mm;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    background-color: #EA5153;
+    border-radius: 50px;
+}
+
+}

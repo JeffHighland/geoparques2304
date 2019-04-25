@@ -1,0 +1,76 @@
+<ion-content class="background-image">
+
+  
+  <ion-card>
+  
+    <button class="see"(click)=mobiliar()>UBICAR MOBILIARIO</button>
+    
+    <ion-item>
+      <ion-label>Tipo de mobiliario</ion-label>
+      <ion-select value="type" okText="Okay" cancelText="Dismiss"  (ionChange)="changeEnvironment($event)">
+        <ion-select-option value="cancha">Cancha</ion-select-option>
+        <ion-select-option value="lamp">Luminaria</ion-select-option>
+        <ion-select-option value="trash">Caneca</ion-select-option>
+        <ion-select-option value="path">Sendero</ion-select-option>
+        <ion-select-option value="kids">Juegos Infantiles</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item *ngIf="cancha">
+        <ion-label>Tipo de Cancha</ion-label>
+        <ion-select value="field" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="futbol">Futbol</ion-select-option>
+          <ion-select-option value="micro">Microfutbol</ion-select-option>
+          <ion-select-option value="basket">basquetball</ion-select-option>
+          <ion-select-option value="mixt">Mixta</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="lampara">
+          <ion-label>Tipo de lampara</ion-label>
+          <ion-select value="field" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="low">Bajo (3 - 4 Metros)</ion-select-option>
+            <ion-select-option value="high">Alto (7.5 - 12.5 Metros)</ion-select-option>
+          </ion-select>
+
+          <ion-select value="field" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="one">1 bombilla</ion-select-option>
+            <ion-select-option value="two">2 bombillas</ion-select-option>
+          </ion-select>
+        
+        </ion-item>
+
+        <ion-item *ngIf="basura">
+            <ion-label>Tipo de Caneca</ion-label>
+            <ion-select value="trash" okText="Si" cancelText="Cancelar">
+              <ion-select-option value="eco">Ecologica - Colores</ion-select-option>
+              <ion-select-option value="basic">Sin separación en la fuente</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item *ngIf="sendero">
+              <ion-label>Tipo de Sendero</ion-label>
+              <ion-select value="trash" okText="Si" cancelText="Cancelar">
+                  <ion-select-option value="grass">Cesped</ion-select-option>
+                  <ion-select-option value="asfalt">Asfalto</ion-select-option>
+                  <ion-select-option value="brick">Ladrillo</ion-select-option>
+                  <ion-select-option value="dirt">Tierra</ion-select-option>
+              </ion-select>
+            </ion-item>
+
+  <ion-item *ngIf="calific">  
+            <ion-label>Estado del mobiliario</ion-label>
+            <ion-select value="trash" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="excelent">Excelente</ion-select-option>
+              <ion-select-option value="good">Bueno</ion-select-option>
+              <ion-select-option value="regular">Regular</ion-select-option>
+              <ion-select-option value="bad">Malo</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+    <img src="../../assets/visuales/gp_quality.png">
+
+    <button class="atras" (click)=login()>Atras</button>
+  </ion-card>
+
+  
+</ion-content>

@@ -1,0 +1,33 @@
+.background-image{
+    ion-card {
+    position: relative;
+    text-align: center;
+    width: auto;
+
+    }
+    .icon {
+    //    display: block;
+        top: 30%;
+        left: 30%;
+        right: 30%;
+        position : absolute;
+        width: 40%;
+
+    }
+    .enter-button {
+        width: 50%;
+        height: 5%;
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        right: 25%;
+        font-size: 5mm;
+        text-align: center;
+        font-family: Arial;
+        color: white;
+        background-color: #EA5153;
+        border-radius: 50px;
+        box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
+    }
+  
+}

@@ -1,12 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { Marcador } from '../class/marcador';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-mobquality',
   templateUrl: './mobquality.page.html',
   styleUrls: ['./mobquality.page.scss'],
 })
-export class MobqualityPage implements OnInit {
-  
+export class MobqualityPage  {
+ 
+  paths : any [] = []; 
+  marcadores : Marcador [] = [];
+  lat = 4.60972222222;
+  lng = -74.0816666667;
+  latA : any;
+  latB : any;
+  lngA : any;
+  lngB : any;
+  polyline = false;
+  polygon = false;
+  state = 0;
 
   cancha = false;
   lampara = false;
@@ -64,6 +77,7 @@ export class MobqualityPage implements OnInit {
       this.sendero = false;
       this.calific = true;
     }
+
 
   }
 }

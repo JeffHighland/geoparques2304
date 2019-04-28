@@ -14,7 +14,7 @@ export class RegisterPage {
 
   login(){
     
-    this.navCtrl.navigateForward('home');
+    this.navCtrl.navigateForward('perfil');
   }
   preconsult(){
    

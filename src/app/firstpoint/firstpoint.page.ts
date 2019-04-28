@@ -25,8 +25,6 @@ export class FirstpointPage {
     )
     
     {
-    //const nuevoMarcador = new Marcador(4.60972222222, -74.0816666667)
-    //this.marcadores.push(nuevoMarcador);
 
   }
 

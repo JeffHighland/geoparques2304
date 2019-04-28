@@ -1,6 +1,26 @@
-<ion-content class="background-image">
+<ion-content >
+    <!-- class="background-image" -->
+    <ion-card-content>
+        <!-- this creates a google map on the page with the given lat/lng from -->
+        <!-- the component as the initial center of the map: -->  
+        <agm-map (mapClick)="agregarMarcador($event)" [latitude]="lat" [longitude]="lng" [zoom]='15'>
+          <agm-marker *ngFor="let marcador of marcadores" [latitude]="marcador.lat" [longitude]="marcador.lng">
+            <agm-info-window>
+              <strong>{{marcador.title}}</strong>
+              <p>{{marcador.description}}</p>
+            </agm-info-window>
+          </agm-marker>
+          <agm-polygon *ngIf="polygon" [paths]="paths">
+          </agm-polygon>
+          <agm-polyline *ngIf="polyline">
+            <agm-polyline-point [latitude]="latA" [longitude]="lngA">
+            </agm-polyline-point>
+            <agm-polyline-point [latitude]="latB" [longitude]="lngB">
+            </agm-polyline-point>
+        </agm-polyline>
+        </agm-map>
+      </ion-card-content>
 
-  
   <ion-card>
   
     <button class="see"(click)=mobiliar()>UBICAR MOBILIARIO</button>
@@ -57,7 +77,18 @@
               </ion-select>
             </ion-item>
 
-  <ion-item *ngIf="calific">  
+            <ion-item *ngIf="juegos">
+              <ion-label>Tipo de Parque Infantil</ion-label>
+              <ion-select value="trash" okText="Si" cancelText="Cancelar">
+                  <ion-select-option type=checkbox value="tobogan">Tobogan</ion-select-option>
+                  <ion-select-option value="pasamanos">Pasamanos</ion-select-option>
+                  <ion-select-option value="subeybaja">Sube y Baja</ion-select-option>
+                  <ion-select-option value="rueda">Rueda</ion-select-option>
+              </ion-select>
+            </ion-item>
+  
+
+<ion-item *ngIf="calific">  
             <ion-label>Estado del mobiliario</ion-label>
             <ion-select value="trash" okText="Okay" cancelText="Dismiss">
               <ion-select-option value="excelent">Excelente</ion-select-option>
@@ -67,7 +98,7 @@
             </ion-select>
           </ion-item>
 
-    <img src="../../assets/visuales/gp_quality.png">
+    <!-- <img src="../../assets/visuales/gp_quality.png"> -->
 
     <button class="atras" (click)=login()>Atras</button>
   </ion-card>

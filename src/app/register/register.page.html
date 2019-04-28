@@ -1,13 +1,20 @@
 <ion-content class="background-image">
 
   <ion-card>
-  
-    <button class="user">Usuario</button>
-    <button class="password">Contraseña</button>
     <button class="preconsult" (click)=preconsult()>INGRESAR</button>
     <button class="atras" (click)=login()>Atras</button>
+
+  <ion-list class="datos">
+    <ion-item>
+      <ion-input placeholder="usuario"></ion-input>
+    </ion-item>
+           <ion-item>
+           <ion-input placeholder="password"></ion-input>
+        </ion-item>
+  </ion-list>
+  
      <img src="../../assets/visuales/gp_register.png">
-  </ion-card>
+</ion-card>
 
 </ion-content>  
 

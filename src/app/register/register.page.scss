@@ -28,21 +28,6 @@
     border-radius: 50px;
     box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
 }
-.password {
-    width: 75%;
-    height: 6%;
-    position: absolute;
-    bottom: 18.4%;
-    left: 12.5%;
-    right: 12.5%;
-    font-size: 5mm;
-    text-align: center;
-    font-family: Arial;
-    color: gray;
-    background-color: white;
-    border-radius: 50px;
-    box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
-}
 .atras {
     width: 20%;
     height: 5%;
@@ -56,4 +41,17 @@
     color: white;
     background-color: #EA5153;
     border-radius: 50px;
+}
+.datos{
+    width: 70%;
+    height: 6%;
+    position: absolute;
+    bottom: 30%;
+    left:15%;
+    right: 15%;
+    font-family: Arial;
+    color: gray;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 11px 8px 26px -9px rgba (0,0,0,0.75);
 }
